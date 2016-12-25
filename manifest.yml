@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: IoT-lps1
+  host: IoT-lps1
+  disk_quota: 1024M
+  services:
+  - IoT-lps1-cloudantNoSQLDB
+  - IoT-lps1-iotf-service
+  - availability-monitoring-auto
